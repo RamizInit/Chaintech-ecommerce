@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../../context/authContext";
+
 import { useTheme } from "../../context/ThemeContext";
 import toast from "react-hot-toast";
 import { Check, CircleAlert, Eye, EyeOffIcon, Moon, ShoppingCart, Sun } from "lucide-react";
+import { useAuth } from "../../context/AuthContext";
 export default function Register() {
   const [form, setForm] = useState({
     name: "",

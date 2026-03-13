@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useAuth } from "../../context/authContext";
+
 import { useCart } from "../../context/CartContext";
 import {
   ShoppingCart,
@@ -15,6 +15,7 @@ import {
   ChevronRight,
   Wallet,
 } from "lucide-react";
+import { useAuth } from "../../context/AuthContext";
 
 const QUICK_ACTIONS = [
   {

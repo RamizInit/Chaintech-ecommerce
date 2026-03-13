@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuth } from "../../context/authContext";
+
 import toast from "react-hot-toast";
 import {
   User,
@@ -17,6 +17,7 @@ import {
   CreditCard,
   Shield,
 } from "lucide-react";
+import { useAuth } from "../../context/AuthContext";
 
 export default function Profile() {
   const { user, updateUser } = useAuth();

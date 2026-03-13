@@ -3,9 +3,10 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 
 
 import { useTheme } from "../../context/ThemeContext";
-import { useAuth } from "../../context/authContext";
+
 import toast from "react-hot-toast";
 import { CircleAlert, Eye, EyeOffIcon, Moon, ShoppingCart, Sun } from "lucide-react";
+import { useAuth } from "../../context/AuthContext";
 
 export default function Login() {
   const [form, setForm] = useState({ email: "", password: "" });

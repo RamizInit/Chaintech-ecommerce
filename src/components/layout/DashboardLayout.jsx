@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Outlet, NavLink, useNavigate, useLocation } from "react-router-dom";
 import { useCart } from "../../context/CartContext";
 import { useTheme } from "../../context/ThemeContext";
-import { useAuth } from "../../context/authContext";
+
 import toast from "react-hot-toast";
 import {
   ShoppingCart,
@@ -19,6 +19,7 @@ import {
   Timer,
   AlertCircle,
 } from "lucide-react";
+import { useAuth } from "../../context/AuthContext";
 
 const NAV_ITEMS = [
   {
